@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="astyle.css">
+        <title>Creative Card Hover Effect and Read More Function</title>
+       
+    </head>
+    <body>
+        
+        <div class="wrapper">
+            <div class="title">
+                <h1>ABOUT US</h1>
+                <p>Real Time Weather Detecting and Message Through Warning Notification.
+                </p>
+            </div>
+        <div class="container">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                    <h3>MISSION</h3>
+                    <p>Our brand mission is to make quality weather information available to every person on this planet.we will provide you with as much relevant,<span class="dots"></span> <span class="moreText"> It will Make The System Easy For The Farmer To Use. local weather data as we can uncover. We promise to provide weather data for those that are underserved by other weather providers.
+                    </p>
+                </div>
+                <a class="more"></a>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                    <h3>VISSION</h3>
+                    <p>Our main goal is to provide you with the latest information about weather, weather news, market rate to make the users more<span class="dots"></span><span class="moreText"> aware of the New things in the world. We provide information about weather.It will make the system easy for the farmer.</p>
+                </div>
+                <a class="more"></a>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                    <h3>HELP & SUPPORT</h3>
+                    <p>These services include Forecasts and Observation,Warning,Impact based decision support system.Meet our Technical Expert Staff,<span class="dots"></span><span class="moreText"> who helps us manage the overall layout and the high-quality content of the platform. In case you need any help you can <a href="">Contact Us</a>Here.</p>
+                </div>
+                <a class="more"></a>
+            </div>
+        </div>
+        </div>  
+        <script>
+            const more = document.querySelectorAll('.more')
+            for(let i = 0; i<more.length; i++){
+                more[i].addEventListener('click', ()=>{
+                    more[i].parentNode.classList.toggle('active')
+                })
+            }
+        </script>
+</body>
+</html>

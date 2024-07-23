@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #d1d0d0f5;
+}
+.title h1{
+    font-size: 50px;
+    color: rgb(14, 13, 13);
+    text-align: center;
+    margin-top: 50px;
+}
+.title p{
+    font-size: 20px;
+    color: #131111e0;
+    text-align: center;
+    margin-top: 10px;
+}
+.container
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1200px;
+}
+.container .card
+{
+  position: relative;
+  width: 350px;
+  padding: 40px;
+  margin: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+}
+.container .card::after
+{
+  content: '';
+  position: absolute;
+  top: -72px;
+  left: -42px;
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #20caf5 0%, #03b0f5 75%);
+  transition: cubic-bezier(0.39, 0.58, 0.57, 1) all 0.15s;
+  z-index: -2;
+  border-radius: 50%;
+}
+.container .card::before
+{
+  content: '';
+  position: absolute;
+  top: -200px;
+  left: -200px;
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  transition: cubic-bezier(0.39, 0.58, 0.57, 1) all 0.55s;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.container .card:hover::after,
+.container .card.active::after
+{
+  width: 120%;
+  height: 120%;
+  border-radius: 0;
+  top: -10%;
+  left: -10%;
+  transition: cubic-bezier(0.39, 0.58, 0.57, 1) all 0.55s;
+}
+.container .card:hover::before,
+.container .card.active::before
+{
+  top: -72px;
+  left: -42px;
+}
+.container .icon
+{
+  margin-bottom: 10px;
+}
+.container .icon .fa
+{
+  font-size: 3.5em;
+  color: rgb(15, 14, 14);
+}
+.container .content
+{
+  margin-top: 40px;
+  height: 225px;
+  overflow: hidden;
+}
+.card.active .content
+{
+  height: auto;
+  overflow: auto;
+}
+.container .content h3
+{
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.container .content p
+{
+  font-size: 16px;
+  color: rgb(19, 18, 18);
+  font-weight: 300;
+}
+.card .more
+{
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #444343;
+  background: #14b5f5;
+  border-radius: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+  letter-spacing: 2px;
+  transition: cubic-bezier(0.39, 0.58, 0.57, 1) all 0.55s;
+}
+.container .card:hover .more,
+.container .card.active .more
+{
+  background: #f0e7e7;
+  color: rgb(0, 0, 0);
+}
+.container .card.active .more::before
+{
+  content: 'Read Less';
+}
+.container .card .more::before
+{
+  content: 'Read More';
+}
+/***Navigation Section***/
+.topnav ul {
+
+  border: 1px solid rgb(13, 10, 10);
+  background: #1f1f33;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  width: 5000px;
+  margin-left: 0px;
+  display: flex;
+  
+  
+  }
+  
+  .topnav p a {
+  color: rgb(255, 253, 253);
+  }
+  
+  .circle {
+  color: rgb(255, 0, 0);
+  font-size: 15px;
+  font-weight: 100;
+  margin-bottom: 6px;
+  
+  }
+  
+  .arrow {
+  font-size: 16px;
+  }
+  
+  .Weather a {
+  
+  font-size: 20px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  }
+  .Alerts a {
+  margin-left: 200px;
+  font-size: 20px;
+  text-decoration: none;
+  color: red;}
+  
+  .News a {
+  margin-left: 200px;
+  font-size: 20px;
+  text-decoration: none;
+  }
+  
+  .Market a {
+  margin-left: 200px;
+  font-size: 20px;
+  text-decoration: none;
+  }
+  
+  .About a {
+  margin-left: 200px;
+  font-size: 20px;
+  text-decoration: none;
+  }
+  
+  .Contact a {
+  margin-left: 150px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  }
+  
+  .topnav a:hover {
+  text-decoration: underline;
+  
+  }
