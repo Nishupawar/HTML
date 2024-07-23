@@ -1,0 +1,19 @@
+.loginform{  
+    padding:20px;  
+    border:3px solid rgb(18, 17, 17);  
+    border-radius:10px;  
+    width:500px;
+    margin-top:100px;  
+    
+}  
+.formheading{  
+    background-color:rgb(244, 233, 233);  
+    color:rgb(32, 11, 11);  
+    padding:7px;  
+    text-align:center;  
+    
+}  
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}

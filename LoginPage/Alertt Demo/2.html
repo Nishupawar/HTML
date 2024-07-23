@@ -1,0 +1,64 @@
+<!DOCTYPE>
+<html>  
+<head>
+    <link rel="stylesheet" href="style.css">
+<center>
+<style>
+.loginform{  
+    padding:20px;  
+    border:3px solid rgb(18, 17, 17);  
+    border-radius:10px;  
+    width:500px;
+    margin-top:100px;  
+    
+}  
+.formheading{  
+    background-color:rgb(244, 233, 233);  
+    color:rgb(32, 11, 11);  
+    padding:7px;  
+    text-align:center;  
+    
+}  
+.center {
+  margin-center: auto;
+  margin-right: auto;
+}
+
+
+</style>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>  
+<div class="loginform">  
+<h3 class="formheading">Alert Message</h3>  
+<form action="LoginServlet" method="post">  
+<table class="center" >  
+  
+    <tr><td>Name:</td><td><input type="name" size="40" name="name"/></td></tr> 
+<tr><td>Email:</td><td><input type="email" size="40" name="email"/></td></tr>  
+<tr><td>Mobile No:</td><td><input type="tel" size="40" name="Mobile"/></td></tr>  
+<!--<tr><td colspan="2" style="text-align:center"><input class="sub" type="submit" value="Send"/></td></tr>-->  
+
+</table> 
+<br> 
+<button name="button" value="OK" type="button"  style="display:block; margin: 0 auto;" onclick="hello()">Send Message</button>  
+
+<script>  
+function hello(){  
+    swal({
+  title: "Alert!",
+  text: "Server weather alert! Hurricane warning in effect for your area.Protect life and property.Ensure supplies for 3+ days.",
+  icon: "error",  //sucess,warning,error,info
+});
+}  
+</script>  
+</center>
+
+
+</form>  
+</div>  
+</body>
+</html>  
+
+ 
