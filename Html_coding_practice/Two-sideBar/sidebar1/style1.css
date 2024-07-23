@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+   padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.side-nav{
+    width: 300px;
+    height: 400%;
+    position: fixed;
+    top: 60px;
+    left: 0;
+   padding: 20px 15px;
+   background-color: rgb(255, 255,255,0.2);
+   backdrop-filter: blur(5px);
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+    padding: 20px; 
+    border-radius: 8px;
+    margin-left: auto;
+   margin-right: auto;
+
+}
+.user h2{ 
+   font-size: 15px;
+   font-weight: 600;
+  white-space: nowrap;
+}
+
+
+ul{
+    list-style: none;
+    padding: 0 20px;
+}
+ul li{
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+ul li img{
+    width: 30px;
+    margin-right: 10px;
+}
+ul li p{
+    white-space: nowrap;
+}
+
+.b2 {
+    width: 80%;
+    height: 900px;
+    background-color: rgb(244, 244, 238);
+    float: right;
+    padding: 20px; /* Adding padding for content */
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+th, td {
+  
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+.footer {
+    position: absolute;
+    bottom: 30px;
+    left: 30px 0;
+    width: 100%;
+    text-size-adjust: small;
+    text-align: left;
+    padding-top: 10px;
+    color: #333;
+}

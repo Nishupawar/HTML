@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+        #sidebar1{
+            width: 200px;
+            height: 800px;
+            background-color:whitesmoke;
+            color:black;
+            padding: 20px;
+        }
+
+        #content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        a {
+            color: #0e0d0d;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <title>Two Sidebars Example</title>
+</head>
+<body>
+
+    <div id="sidebar1">
+        <h2 style="background-color: blue;">CuteHr</h2>
+        <ul style="color: black; border-sixe">
+            <a href="#">Vikram Mahale</a>
+            
+            <a href="#">Applicant Tracking </a>
+            <a href="#">Survey</a><br>
+            Your Company <br>
+            <a href="#">Employees</a><br>
+            <a href="#">Projects</a><br>
+            <a href="#">Clients</a><br>
+            <a href="#">Events</a><br>
+            <a href="#">Reports</a><br>
+            <a href="#">Settings</a>br
+        </ul>
+    </div>
+    
+    <div id="content">
+        <h1>Main Content</h1>
+        <p>Before proceding ,please check your email for a verification link.If you did not receive the email,
+            <a href="#">click here to request another</a>
+        </p>
+       
+
+        <br><br><br><br>
+        <h4>Home > Employees</h4>
+        <div>
+            <h2 ">Company Employees</h2>
+        </div>
+        <br><br><br><br><br><br><br><br>
+        Copyright CuteHr @ 2019
+    </div>
+
+   
+
+</body>
+</html>

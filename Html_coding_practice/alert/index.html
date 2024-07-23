@@ -1,0 +1,32 @@
+<!DOCTYPE>  
+<html>  
+<head>  
+<title>Web page title</title>  
+<style>
+    #pop{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>  
+<body>  
+<button onclick="popUp()" id="pop">Click me</button>
+<script>
+    function popUp(){
+        
+        swal({
+  title: "Alert!",
+  text: "Server weather alert! Hurricane warning in effect for your area.Protect life and property.Ensure supplies for 3+ days.",
+  icon: "error",  //sucess,warning,error,info
+});
+
+    }
+
+
+</script>
+    
+</body>
+</html>
