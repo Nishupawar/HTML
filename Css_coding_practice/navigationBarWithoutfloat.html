@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7affab991a.js" crossorigin="anonymous"></script>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    nav{
+        display: flex;
+        width: 100%;
+    }
+    .logo{
+        width: 35%;
+        background-color: rgb(179, 207, 122);
+        padding-left: 20px;
+        line-height: 50px;
+    }
+    .navbar{
+        width: 75%;
+        background-color: yellow;
+        line-height: 50px;
+    }
+    .navbar ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+    }
+    .navbar ul li:hover{
+        text-shadow: 1px 1px black;
+    }
+    .navbar ul li ul{
+        display: none;
+    }
+    .navbar ul li:hover>ul{
+        display: block;
+        position: absolute;
+        background-color: yellow;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Website Logo</h1>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li> <i class="fa-solid fa-house"></i><a href="https://www.google.com/">Home</a> </li>
+                <li><i class="fa-solid fa-newspaper"></i> <a href="https://www.google.com/">News</a> </li>
+                <li><i class="fa-solid fa-address-card"></i> <a href="https://www.google.com/">About Us</a></li>
+                <li><i class="fa-sharp fa-regular fa-address-card"></i> <a href="https://www.google.com/">Contact</a></li>
+               <li> <i class="fa-brands fa-hire-a-helper"></i><a href="https://www.google.com/">Help</a>     </li>
+               <li><i class="fa-solid fa-gear"></i><a href="https://www.google.com/">Setting</a>
+                <ul>
+                    <li><i class="fa-brands fa-instagram"><a href="https://www.instagram.com/">Instagram</a></i></li>
+                    <li><i class="fa-brands fa-whatsapp"><a href="https://www.whatsapp.com/">Whatsapp</a></i></li>
+                    <li><i class="fa-brands fa-facebook"><a href="https://www.facebook.com/">Facebook</a></i></li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>

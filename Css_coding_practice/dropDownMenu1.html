@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+   margin: 0;
+   padding: 0;
+        }
+        .nav{
+            background-color: beige;
+            color: red;    
+        }
+        .nav ul li{
+            list-style-type: none; 
+            border: 2px outset red;
+            float: left;
+            width: 120px;
+           height: 30px;
+           line-height: 30px;
+           background-color: yellow;
+           color: red;   
+        }
+        .nav ul li:hover{
+          background-color: orange;
+          color: black;
+        }
+        .nav ul li ul{
+            display: none;
+        }
+       .nav ul li:hover>ul{
+        display: block;
+       }
+       .nav ul li ul li {
+        display: inline-block;      
+        position: relative;
+       }
+       .nav ul li ul li ul{
+        position: absolute;
+        left: 120px;
+        top: 10;
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+  <ul>
+    <li>Front-End
+        <ul>
+            <li>Html</li>
+            <li>Angular
+                <ul>
+                    <li>AngularJs</li>
+                    <li>TypeScript</li>
+                </ul>
+            </li>
+            <li>Javascript
+                <ul>
+                    <li>AngularJs</li>
+                    <li>NodeJs</li>
+                </ul>
+            </li>
+            <li>React</li>
+        </ul>
+    </li>
+    <li>Back-End
+        <ul>
+            <li>Java
+                <ul>
+                    <li>Advance Java</li>
+                    <li>JDBC</li>
+                </ul>
+            </li>
+            <li>Spring
+                <ul>
+                    <li>SpringBoot</li>
+                    <li>JPA</li>
+                </ul>
+            </li>
+            <li>Python</li>
+        </ul>
+    </li>
+    <li>Databse
+        <ul>
+            <li>Sql
+                <ul>
+                    <li>MySQL</li>
+                    <li>NoSQL</li>
+                </ul>
+            </li>
+            <li>MongoDB</li>
+        </ul>
+    </li>
+    <li>Laptops
+        <ul>
+            <li>Asus</li>
+            <li>HP
+                <ul>
+                    <li>Grey</li>
+                    <li>Black</li>
+                    <li>White</li>
+                </ul>
+            </li>
+            <li>Dell
+                <ul>
+                    <li>Grey</li>
+                    <li>Black</li>
+                    <li>White</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+  </ul>
+    </div>
+</body>
+</html>

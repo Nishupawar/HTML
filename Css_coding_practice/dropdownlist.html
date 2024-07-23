@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .nav{
+    background-color: bisque;
+  }
+  .nav ul li {
+    list-style-type: none;
+    background-color: yellow;
+    color: red;
+    float: left;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .nav ul li:hover{
+    background-color: orange;
+    color: black;
+  }
+  .nav ul li ul {
+    display: none;
+  }
+  .nav ul li:hover >ul{
+    display: block;
+  }
+ .nav ul li ul li {
+    display: inline-block;
+    position: relative;
+ }
+ .nav ul li ul li ul {
+    position: absolute;
+    left: 120px;
+    top: 0;
+ }
+ .nav ul li ul li ul li{
+    display: inline-block;
+    position: relative;
+ }
+ .nav ul li ul li ul li ul {
+    position: absolute;
+    left: 120px;
+    top: 0;
+ }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home
+                <ul>
+                    <li>Address
+                        <ul>
+                            <li>Ninam</li>
+                            <li>Padali</li>
+                        </ul>
+                    </li>
+                    <li>Location
+                        <ul>
+                            <li>Pune</li>
+                            <li>Satara</li>
+                            <li>Mumbai</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Contact-US
+                <ul>
+                    <li>Mother
+                        <ul>
+                            <li>Swati</li>
+                        </ul>
+                    </li>
+                    <li>Father
+                        <ul>
+                            <li>vijay</li>
+                        </ul>
+                    </li>
+                    <li>Sister
+                        <ul>
+                            <li>Gayu</li>
+                            <li>Praju</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Gmail
+                <ul>
+                    <li>Nishu
+                        <ul>
+                            <li>nishigandhapawar1308@gmail.com</li>
+                            <li>pawarn95@gmail.com</li>
+                        </ul>
+                    </li>
+                    <li>Gayu
+                        <ul>
+                            <li>gayatripawar2005@gmail.com</li>
+                            <li>pawargayatri811@gmail.com</li>
+                        </ul>
+                    </li>
+                    <li>Praju
+                        <ul>
+                            <li>prajktapawar1902@gmail.com</li>
+                            <li>pawarp19@gmail.com</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

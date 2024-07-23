@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color: pink;
+    border: 2px solid red;
+    color: blue;
+   
+}
+.nav ul{
+  
+}
+.nav ul li{
+list-style-type: none;
+float: left;
+width: 120px;
+height: 30px;
+line-height: 30px;
+background-color: gray;
+color: white;
+}
+
+.nav ul li:hover{
+    background-color: orange;
+    color: black;
+}
+.nav ul li ul{
+    display: none;
+}
+.nav ul li:hover > ul{
+    display: block;
+}
+.nav ul li ul li{
+    display: inline-block;
+    position: relative;
+}
+.nav ul li ul li ul{
+    position: absolute;
+    left: 120px;
+    top: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="nav">Brands
+       <ul>
+        <li>Sony
+            <ul>
+                <li>LED Tv</li>
+                <li>Tab</li>
+                <li>Mobiles</li>
+                <li>watch</li>
+            </ul>
+        </li>
+        <li>vivo
+            <ul>
+                <li>Mobiles</li>
+                <li>watch</li>
+            </ul>
+        </li>
+        <li>Samsung
+            <ul>
+                <li>LED TV</li>
+                <li>Mobiles</li>
+                <li>Freeze</li>
+            </ul>
+        </li>
+        <li>Nokia
+            <ul>
+                <li>phones</li>
+                <li>tab
+                    <ul>
+                        <li>Blue color</li>
+                        <li>pink color</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+       </ul>
+    </div>
+</body>
+</html>

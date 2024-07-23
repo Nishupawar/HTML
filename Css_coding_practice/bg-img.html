@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Backgroung-img.css">
+    <title>Document</title>
+   <style>
+    h1{
+    height: 200px;
+    width: 200px;
+    background-image: linear-gradient(blue,red,green,pink 5%);
+}
+h2{
+height: 200px;
+width: 200px;
+background-image:radial-gradient(blue,green,red);
+}
+h2 .h2{
+    height: 200px;
+    width: 200px;
+    background-image:radial-gradient(closest-side at 50% 50% blue,green,red);
+    }
+h3{
+    height: 200px;
+    width: 200px;
+    background-image:conic-gradient(blue,green,red);
+}
+h4{
+    height: 200px;
+    width: 200px;
+   
+background-image:repeating-linear-gradient(blue,yellow,red);
+}
+h5{
+    height: 200px;
+    width: 200px;
+   
+    background-image: repeating-radial-gradient(yellow,red,blue);
+}
+h6{
+    height: 200px;
+    width: 200px;
+    background-image: repeating-conic-gradient(yellow,red,blue);
+}
+p{
+    height: 200px;
+    width: 200px;
+    background-image: radial-gradient(black,white,grey,black 25%,pink);
+}
+   </style>
+</head>
+<body>
+    <h1>linear-gradient</h1>
+    <h2>radial-gradient</h2>
+    <h2 class="h2">radial-gradient : closest side at </h2>
+    <h3>conic-gradient</h3>
+    <h4>repeating-linear-gradient</h4>
+    <h5>repeating-radial-gradient</h5>
+    <h6>repeating-conic-gradient</h6>
+    <p>five-color</p>
+    
+    
+</body>
+</html>
